@@ -6,7 +6,7 @@
     "node": "20.x"
   },
   "dependencies": {
-    "@deck.gl/core": "^9.2.2",
+    "@deck.gl/core": "^9.3.11",
     "@deck.gl/extensions": "^9.2.2",
     "@deck.gl/layers": "^9.2.2",
     "@deck.gl/react": "^9.2.2",
