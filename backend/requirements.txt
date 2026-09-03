@@ -4,7 +4,7 @@ tqdm~=4.67.1
 # Keep numerical stack ABI-compatible (your runtime hit SciPy/NumPy mismatch)
 numpy~=1.26.4
 scipy~=1.15.3
-scikit-learn~=1.7.2
+scikit-learn~=1.9.0
 
 # Private HMA notebook (the notebook is public; its input databases are not)
 matplotlib~=3.10.9
