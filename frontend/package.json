@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.21",
     "bootstrap": "^5.3.8",
     "clsx": "^2.1.1",
-    "deck.gl": "^9.2.2",
+    "deck.gl": "^9.3.11",
     "lucide-react": "^0.511.0",
     "plotly.js": "^3.2.0",
     "postcss": "^8.5.26",
