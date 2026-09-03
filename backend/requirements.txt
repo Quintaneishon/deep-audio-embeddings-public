@@ -1,0 +1,38 @@
+pandas~=2.3.3
+tqdm~=4.67.1
+
+# Keep numerical stack ABI-compatible (your runtime hit SciPy/NumPy mismatch)
+numpy~=1.26.4
+scipy~=1.15.3
+scikit-learn~=1.7.2
+
+# Private HMA notebook (the notebook is public; its input databases are not)
+matplotlib~=3.10.9
+seaborn~=0.13.2
+statsmodels~=0.14.6
+jupyterlab~=4.5.7
+
+# Embedding projection / visualization
+umap-learn~=0.5.11
+
+# Audio processing
+essentia~=2.1b6.dev1389
+librosa~=0.11.0
+soundfile~=0.12.1
+cffi~=1.17.1
+h5py~=3.15.1
+
+torch~=2.6.0
+torchvision~=0.21.0
+torchaudio~=2.6.0
+torchvggish~=0.2
+tensorboard~=2.14.0
+openai-whisper>=20231117
+transformers~=4.57.6
+peft~=0.14.0
+
+# Web backend (required by backend/server.py)
+Flask~=3.1.2
+python-dotenv~=1.1.0
+flask-cors~=6.0.2
+click~=8.3.1

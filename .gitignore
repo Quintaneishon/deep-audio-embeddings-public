@@ -1,0 +1,66 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / secrets
+backend/.env
+frontend/.env
+.env
+.env.local
+.env.*.local
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+
+# Backend data & generated files
+backend/data/audio_fma/**
+backend/data/**
+!backend/data/audio_fma/.gitkeep
+backend/DL/weights/**
+!backend/DL/weights/.gitkeep
+backend/reports/**
+!backend/reports/hma_analysis.ipynb
+backend/DL/trainings/checkpoints/**
+!backend/DL/trainings/checkpoints/.gitkeep
+backend/DL/trainings/logs/**
+!backend/DL/trainings/logs/.gitkeep
+backend/DL/cache/**
+!backend/DL/cache/.gitkeep
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tools
+.claude/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Never publish databases, recordings, or serialized model weights, regardless
+# of which local directory they are placed in.
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.ogg
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+backend/db/**
+!backend/db/__init__.py
+!backend/db/database.py

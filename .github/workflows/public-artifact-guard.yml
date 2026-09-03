@@ -1,0 +1,37 @@
+name: Public artifact guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject private or generated artifact types
+        shell: bash
+        run: |
+          set -euo pipefail
+          blocked='\.(db|db-[^/]*|sqlite|sqlite3|mp3|wav|flac|m4a|ogg|pth|pt|ckpt|safetensors)$'
+          if git ls-files | grep -Eiq "$blocked"; then
+            git ls-files | grep -Ei "$blocked"
+            exit 1
+          fi
+      - name: Require an output-free public notebook
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+
+          notebook = json.loads(Path('backend/reports/hma_analysis.ipynb').read_text())
+          for cell in notebook['cells']:
+              if cell['cell_type'] != 'code':
+                  continue
+              if cell.get('execution_count') is not None or cell.get('outputs'):
+                  raise SystemExit('Public notebook contains stored execution output')

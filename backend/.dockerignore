@@ -1,0 +1,6 @@
+**
+!Dockerfile
+!eval_requirements.txt
+!eval_server.py
+!eval_validation.py
+!start.sh
