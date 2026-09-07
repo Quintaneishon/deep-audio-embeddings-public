@@ -1,5 +1,5 @@
 pandas~=2.3.3
-tqdm~=4.67.1
+tqdm~=4.70.0
 
 # Keep numerical stack ABI-compatible (your runtime hit SciPy/NumPy mismatch)
 numpy~=1.26.4
