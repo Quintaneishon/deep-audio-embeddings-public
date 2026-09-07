@@ -7,7 +7,7 @@ scipy~=1.15.3
 scikit-learn~=1.9.0
 
 # Private HMA notebook (the notebook is public; its input databases are not)
-matplotlib~=3.10.9
+matplotlib~=3.11.1
 seaborn~=0.13.2
 statsmodels~=0.14.6
 jupyterlab~=4.5.7
